@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME - Trabalhos de Programação</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f3f7f3;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      background: #474b47;
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .header h1 a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 26px;
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    nav {
+      display: flex;
+      gap: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 8px 16px;
+      background: #070808;
+      color: #fff;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #48f838;
+      color: #000;
+    }
+
+    main {
+      padding: 40px;
+      display: flex;
+      justify-content: left;
+    }
+
+    
+    .trimestres {
+      width: 100%;
+      max-width: 400px;
+      background:#f3f7f3;
+      padding: 30px;
+     
+    }
+
+    .trimestres h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0f172a;
+    }
+
+    .trimestres a {
+      display: block;
+      margin-bottom: 15px;
+      padding: 15px;
+      text-align: center;
+      background: #070808;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .trimestres a:hover {
+      background: #06f926;
+      color: #000;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <h1><a href="index.html">HOME</a></h1>
+  
+
+  <nav id="menu">
+    <a href="pag/t1.html">T1</a>
+    <a href="pag/t2.html">T2</a>
+    <a href="pag/t3.html">T3</a>
+    <a href="pag/t4.html">T4</a>
+    <a href="pag/t5.html">T5</a>
+    <a href="pag/t6.html">T6</a>
+  </nav>
+</header>
+
+<main>
+  <div class="trimestres">
+    
+
+    <a href="pag/trimestre1.html">I Trimestre</a>
+    <a href="pag/trimestre2.html">II Trimestre</a>
+    <a href="pag/trimestre3.html">III Trimestre</a>
+  </div>
+</main>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.getElementById('menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
