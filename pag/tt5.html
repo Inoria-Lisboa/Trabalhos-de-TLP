@@ -63,6 +63,81 @@ background:#ff2e63;
 color:white;
 }
 
+.ab{
+    margin: 10%;
+
+    }
+
+    .tr{
+    margin: 10%;
+
+    }
+
+
+  
+.cards {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            background: white;
+        }
+
+        .card {
+            width: 30%;
+           
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+
+.cardi {
+           
+            width: 100%;
+            height: 460px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 15px;
+}
+
+         
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+       
+        .conteudo {
+            display: flex;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .box-texto {
+            background: rgb(3, 3, 3);
+            padding: 25px;
+            border-radius: 8px;
+            width: 50%;
+        }
+
+        .box-texto h2 {
+            margin-bottom: 10px;
+            color: #f9fafb;
+        }
+
+
+        footer {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+  
 .secao-moderna {
 margin-top: 50px;
 display: flex;
@@ -71,7 +146,7 @@ gap: 50px;
 }
 
 .secao-moderna h2 {
-color: #0284c7;
+color: #c702c0ff;
 margin-bottom: 20px;
 position: relative;
 display: inline-block;
@@ -84,7 +159,7 @@ left: 0;
 bottom: -5px;
 width: 50%;
 height: 3px;
-background: #0284c7;
+background: #a0789dff;
 transition: 0.4s;
 }
 
@@ -101,7 +176,7 @@ padding: 0;
 background: #ffffff;
 margin-bottom: 15px;
 padding: 18px 20px;
-border-left: 5px solid #0284c7;
+border-left: 5px solid #c70275ff;
 border-radius: 10px;
 font-weight: 500;
 color: #0f172a;
@@ -128,8 +203,8 @@ left: 0;
 
 .lista-profissional li:hover {
 transform: translateX(10px);
-color: #0f172a;
-border-left: 5px solid #0f172a;
+color: #a353a3ff;
+border-left: 5px solid #722461ff;
 }
 
 .lista-profissional li span {
@@ -142,7 +217,7 @@ border-left-color: #0f172a;
 }
 
 .lista-profissional li:last-child {
-border-left-color: #0284c7;
+border-left-color: #a002c7ff;
 }
 
 .lista-profissional li:nth-child(even) {
@@ -170,8 +245,8 @@ transition: 0.3s;
 }
 
 .tabela-profissional tbody tr {
-background: #ffffff;
-border-bottom: 1px solid #bae6fd;
+background: #d282c4ff;
+border-bottom: 1px solid #881b7dff;
 transition: 0.3s;
 }
 
@@ -181,10 +256,10 @@ transform: scale(1.01);
 }
 
 .tabela-profissional tbody tr:nth-child(even) {
-background: #f1f5f9;
+background: #624f71ff;
 }
 .tabela-profissional td:hover {
-background: #0284c7;
+background: #c702c0ff;
 color: white;
 font-weight: bold;
 }
@@ -199,7 +274,7 @@ overflow: hidden;
 }
 
 .tabela-mesclada th {
-background: #0284c7;
+background: #c702bdff;
 color: white;
 padding: 15px;
 }
@@ -209,16 +284,16 @@ padding: 15px;
 text-align: center;
 background: #ffffff;
 transition: 0.3s;
-border: 1px solid #bae6fd;
+border: 1px solid #8d35adff;
 }
 
 .tabela-mesclada tr:hover td {
-background: #f1f5f9;
+background: #621187ff;
 }
 
 .tabela-mesclada td:hover {
 background: #0f172a;
-color: #e0f2fe;
+color: #fafafcff;
 }
   
 </style>
@@ -241,6 +316,222 @@ color: #e0f2fe;
 <a href="trimestre3.html" class="btn-register">Próximo</a>
 </div>
 </nav>
+ 
+
+<div class="tr">
+    <h1>CONTEÚDO: INTRODUÇÃO AO CSS</h1><br>
+    <p><strong>1. O que é CSS?</strong></p><br>
+    <p>CSS significa Cascading Style Sheets (Folhas de Estilo em Cascata).
+O CSS é uma linguagem usada para dar estilo às páginas Web criadas com HTML.
+Enquanto o HTML serve para estruturar o conteúdo (textos, imagens, botões),
+ o CSS é responsável pela aparência visual da página.</p><br>
+
+  <p><strong>Exemplos do que o CSS faz:</strong></p><br>
+    <p>• Mudar cores dos textos;<br>
+• Alterar o tamanho das letras;<br>
+• Definir cores de fundo;<br>
+• Posicionar elementos na página.</p><br>
+
+  <p><strong>2. Importância do CSS no Desenvolvimento Web <br> <br> 
+    O CSS é muito importante porque:</strong></p><br>
+    <p>• Melhora a aparência dos sites, tornando-os mais bonitos 
+      e organizados;<br>
+• Facilita a leitura do conteúdo;<br>
+• Permite a separação entre conteúdo e design: o HTML → conteúdo
+o CSS → aparência<br>
+• Ajuda a manter e actualizar os sites com mais facilidade;<br>
+• Garante uma melhor experiência do utilizad</p><br>
+
+ <p><strong>3. Tipos de Folhas de Estilo CSS <br> <br> 
+  Existem três formas principais de aplicar CSS em uma página HTML: <br> <br>
+3.1 CSS Inline</strong></p><br>
+    <p>O CSS inline é aplicado directamente dentro da tag HTML.
+Exemplo:
+<"p style="color: blue;">"Este texto é azul<"/p></p><br>
+<p>
+  Características: <br>
+• É simples e rápido;<br>
+• Serve para pequenas alterações;<br>
+• Não é recomendado para páginas grandes<br>
+</p>
+
+ <p><strong>3.2 CSS Interna (Internal CSS) <br> <br> 
+ <p>
+  O CSS interno é escrito dentro da própria página HTML, 
+  usando a tag <!style>. <br>
+Exemplo: <br>
+<"style><br>
+ p {<br>
+ color: green;<br>
+ }<br>
+</"style><br>
+ </p><br>
+
+ <p>
+  Características:<br>
+• Organiza melhor o código que o CSS inline;<br>
+• Aplica estilo a vários elementos ao mesmo tempo;<br>
+• É usado quando o estilo é apenas para uma página<br>
+ </p>
+    
+  </div>
+
+
+<div class="ab">
+<h1>SINTAXE BÁSICA DO CSS E SELETORES</h1><br>
+
+    <p><strong>1. Sintaxe Básica do CSS</strong></p><br>
+
+    <p>
+      O CSS é escrito através de regras de estilo.
+      Cada regra é composta por um seletor e um bloco de declarações.
+      O seletor indica qual elemento HTML será estilizado,
+      enquanto as declarações definem como esse elemento irá aparecer.
+    </p><br>
+
+    <p><strong>Estrutura básica de uma regra CSS:</strong></p><br>
+
+    <p>
+      seletor { <br>
+      &nbsp;&nbsp;propriedade: valor; <br>
+      }
+    </p><br>
+
+    <p>
+      Exemplos do que compõe a sintaxe do CSS:<br>
+      • Seletor – escolhe o elemento HTML;<br>
+      • Propriedade – define o que será alterado;<br>
+      • Valor – indica como será a alteração;<br>
+      • Cada declaração termina com ponto e vírgula (;).<br>
+    </p><br>
+  </div><br>
+
+  <div class="ab">
+    <p><strong>2. Seletores Simples em CSS <br><br>
+      Os seletores são usados para indicar quais elementos HTML receberão estilo.
+      Os principais seletores simples são:</strong>
+    </p><br>
+
+    <p>
+      • Seletor de elemento (tag): seleciona elementos pelo nome da tag;<br>
+      • Seletor de classe: seleciona elementos que possuem uma classe específica;<br>
+      • Seletor de ID: seleciona um elemento com identificador único;<br>
+      • Seletor universal: seleciona todos os elementos da página.<br>
+    </p><br>
+  </div><br>
+
+  <div class="ab">
+    <p><strong>3. Tipos de Seletores Simples <br><br>
+      3.1 Seletor de Elemento</strong>
+    </p><br>
+
+    <p>
+      O seletor de elemento utiliza o nome da tag HTML
+      e aplica o estilo a todos os elementos desse tipo.
+      <br><br>
+      Exemplo:
+    </p>
+
+    <p>
+      p { <br>
+      &nbsp;&nbsp;color: blue; <br>
+      }
+    </p><br>
+
+    <p>
+      Características:<br>
+      • Aplica o estilo a todas as tags iguais;<br>
+      • É simples e muito utilizado;<br>
+      • Possui baixa prioridade em relação a classes e IDs.<br>
+    </p><br>
+  </div><br>
+
+  <div class="ab">
+    <p><strong>3.2 Seletor de Classe</strong></p><br>
+
+    <p>
+      O seletor de classe é identificado por um ponto (.)
+      e permite aplicar estilos a vários elementos diferentes.
+      <br><br>
+      Exemplo:
+    </p>
+
+    <p>
+      .texto { <br>
+      &nbsp;&nbsp;font-size: 18px; <br>
+      }
+    </p><br>
+
+    <p>
+      Características:<br>
+      • Pode ser reutilizado em vários elementos;<br>
+      • Usa o ponto (.) antes do nome;<br>
+      • É muito comum no desenvolvimento web.<br>
+    </p><br>
+  </div><br>
+      <div class="ab">
+    <p><strong>3.3 Seletor de ID</strong></p><br>
+
+    <p>
+      O seletor de ID utiliza o símbolo # e identifica
+      um único elemento na página HTML.
+      <br><br>
+      Exemplo:
+    </p>
+
+    <p>
+      #principal { <br>
+      &nbsp;&nbsp;background-color: lightgray; <br>
+      }
+    </p><br>
+
+    <p>
+      Características:<br>
+      • Deve ser único na página;<br>
+      • Usa o símbolo #;<br>
+      • Possui maior prioridade que classes e elementos.<br>
+    </p><br>
+</div> 
+
+
+<section class="conteudo">
+    <div class="box-texto">
+        <h2>Receita de Torta de Limão</h2>
+
+        <p>
+            A torta de limão é uma sobremesa deliciosa, cremosa e muito fácil de preparar.
+            Nesta receita, começamos triturando o biscoito no liquidificador até formar
+            uma farofa fina, que será a base da torta.
+        </p>
+
+        <p>
+            A base é colocada em uma forma com fundo removível e pressionada
+            para formar o fundo e as laterais da torta. Depois disso, preparamos
+            o creme de limão, que dá o sabor especial e refrescante à sobremesa.
+        </p>
+
+        <p>
+            Por fim, a torta é finalizada com chantilly e raspas de limão,
+            deixando-a ainda mais bonita e saborosa.
+        </p>
+    </div>
+
+    <div class="box-texto">
+        <h3>Ingredientes Utilizados</h3>
+
+        <p>✔ 1 lata de leite condensado</p>
+        <p>✔ 1 caixa de creme de leite</p>
+        <p>✔ 2 colheres de leite em pó</p>
+        <p>✔ 1 tira e meia de biscoito maizena</p>
+        <p>✔ 3 limões</p>
+        <p>✔ Chantilly para decorar</p>
+
+        <p>
+            Uma receita simples, prática e perfeita para qualquer ocasião!
+        </p>
+    </div>
+</section>
+
 <section class="secao-moderna">
 
   <div>
@@ -324,6 +615,12 @@ color: #e0f2fe;
 
 </section> 
 
+
+<footer>
+    <p>© 2026 - Receita de Torta de Limão</p>
+    <p>Desenvolvido por Inória Reais</p>
+</footer>
  
+
 </body>
 </html>
