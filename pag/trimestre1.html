@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Inória</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#0b1320;
+color:white;
+}
+
+/* NAVBAR */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:#071022;
+}
+
+.logo{
+color:#ff2e63;
+font-weight:bold;
+font-size:22px;
+}
+
+nav ul{
+display:flex;
+gap:40px;
+list-style:none;
+}
+
+nav ul li{
+color:#cbd5e1;
+cursor:pointer;
+}
+
+.nav-buttons a{
+padding:10px 20px;
+border-radius:25px;
+border:none;
+cursor:pointer;
+margin-left:10px;
+}
+
+.btn-login{
+background:transparent;
+border:1px solid #334155;
+color:white;
+}
+
+.btn-register{
+background:#ff2e63;
+color:white;
+}
+
+ 
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),  center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 20px;
+}
+
+.badge{
+background:#1f2937;
+padding:10px 20px;
+border-radius:30px;
+color:#ff2e63;
+margin-bottom:30px;
+font-size:14px;
+}
+
+.hero h1{
+font-size:64px;
+margin-bottom:20px;
+}
+
+.hero h1 span{
+color:#ff2e63;
+}
+
+.hero p{
+max-width:700px;
+color:#cbd5e1;
+margin-bottom:40px;
+font-size:20px;
+}
+
+.buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.buttons a{
+padding:15px 30px;
+border-radius:12px;
+border:none;
+cursor:pointer;
+font-size:16px;
+}
+
+.primary{
+background:#ff2e63;
+color:white;
+}
+
+.dark{
+background:#0f172a;
+color:white;
+border:1px solid #334155;
+}
+
+.social{
+margin-top:50px;
+opacity:0.7;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="../index.html" class="logo">❤ Início</a>
+
+<ul>
+<li>Inória</li>
+<li>Domingos</li>
+<li>Reais</li>
+<li>Lisboa</li>
+</ul>
+
+<div class="nav-buttons">
+<a href="../index.html" class="btn-login">Voltar</a>
+<a href="trimestre2.html" class="btn-register">Próximo</a>
+</div>
+</nav>
+
+<section class="hero">
+
+<h1>Estas são <span>as Tarefas</span> do Iº Trimestre</h1>
+
+<p>Este é o meu site correspondente a todas as tarefas de programação mandadas no ano lectivo corrente.</p>
+
+<div class="buttons">
+<a href="t1.html" class="primary">T1</a>
+<a href="t2.html" class="dark">T2</a>
+<a href="t3.html" class="primary">T3</a>
+<a href="t4.html" class="dark">T4</a>
+<a href="t5.html" class="primary">T5</a>
+<a href="t6.html" class="dark">T6</a>
+</div>
+
+<div class="social">Aprecie o meu desenvolvimento</div>
+
+</section>
+
+</body>
+</html>
