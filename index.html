@@ -1,170 +1,173 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HOME - Trabalhos de Programação</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inória</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
 
-    body {
-      background: #f3f7f3;
-    }
+body{
+background:#0b1320;
+color:white;
+}
 
  
-    .header {
-      position: sticky;
-      top: 0;
-      background: #474b47;
-      padding: 15px 25px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
-    }
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:#071022;
+}
 
-    .header h1 a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 20px;
-    }
-    .header h1 a:hover {
-     background: #48f838;
-      color: #000;
-    }
+.logo{
+color:#ff2e63;
+font-weight:bold;
+font-size:22px;
+}
 
-    header a {
-      text-decoration: none;
-      padding: 8px 16px;
-      background: #070808;
-      color: #fff;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+nav ul{
+display:flex;
+gap:40px;
+list-style:none;
+}
 
+nav ul li{
+color:#cbd5e1;
+cursor:pointer;
+}
 
-    main {
-      padding: 40px;
-      display: flex;
-      gap: 40px;
-      justify-content: space-between;
-    }
+.nav-buttons button{
+padding:10px 20px;
+border-radius:25px;
+border:none;
+cursor:pointer;
+margin-left:10px;
+}
 
-  
-    .sobre {
-      flex: 1;
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+.btn-login{
+background:transparent;
+border:1px solid #334155;
+color:white;
+}
 
-    .sobre h1 {
-      margin-bottom: 20px;
-      color: #0f172a;
-    }
+.btn-register{
+background:#ff2e63;
+color:white;
+}
 
-    .sobre p {
-      margin-bottom: 15px;
-      line-height: 1.6;
-    }
+/* HERO */
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
+url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2') center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 20px;
+}
 
+.badge{
+background:#1f2937;
+padding:10px 20px;
+border-radius:30px;
+color:#ff2e63;
+margin-bottom:30px;
+font-size:14px;
+}
 
-    .trimestres {
-      width: 100%;
-      max-width: 300px;
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+.hero h1{
+font-size:64px;
+margin-bottom:20px;
+}
 
-    .trimestres h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #0f172a;
-    }
+.hero h1 span{
+color:#ff2e63;
+}
 
-    .trimestres a {
-      display: block;
-      margin-bottom: 15px;
-      padding: 15px;
-      text-align: center;
-      background: #070808;
-      color: #fff;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
+.hero p{
+max-width:700px;
+color:#cbd5e1;
+margin-bottom:40px;
+font-size:20px;
+}
 
-    .trimestres a:hover {
-      background: #06f926;
-      color: #000;
-    }
+.buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
 
-  
-    @media (max-width: 768px) {
-      main {
-        flex-direction: column;
-      }
+.buttons a{
+padding:15px 30px;
+border-radius:12px;
+border:none;
+cursor:pointer;
+font-size:16px;
+}
 
-      .trimestres {
-        max-width: 100%;
-      }
-    }
-  </style>
+.primary{
+background:#ff2e63;
+color:white;
+}
+
+.dark{
+background:#0f172a;
+color:white;
+border:1px solid #334155;
+}
+
+.social{
+margin-top:50px;
+opacity:0.7;
+}
+</style>
 </head>
 
 <body>
 
-<header class="header">
-  <h1><a href="index.html">HOME</a></h1>
+<nav>
+<div class="logo">❤ Início</div>
 
-</header>
+<ul>
+<li>Inória</li>
+<li>Domingos</li>
+<li>Reais</li>
+<li>Lisboa</li>
+</ul>
 
-<main>
+<div class="nav-buttons">
+<button class="btn-login">Clica aqui  --»</button>
+<button class="btn-register">Criar Conta</button>
+</div>
+</nav>
 
-  <div class="sobre">
-    <h1>SEJA BEM-VINDO AO MEU SITE</h1>
+<section class="hero">
 
-    <p>
-      <strong>Nome:</strong> Inoria Lisboa <br>
-      <strong>Nº:</strong> 16 <br>
-      <strong>Sala:</strong> 19 <br>
-      <strong>Turma:</strong> ANI <br>
-      <strong>Turno:</strong> Noite <br>
-      <strong>Classe:</strong> 13ª
-    </p>
+<div class="badge">🇦🇴 o meu pequeno site de tarefas</div>
 
-    <p>
-      Este site foi desenvolvido no âmbito dos trabalhos de programação,
-      com o objetivo de aplicar os conhecimentos adquiridos em sala de aula.
-    </p>
+<h1>Aprecie as <span>Minhas</span> tarefas</h1>
 
-    <p>
-      As atividades realizadas envolvem a criação de páginas web,
-      organização de conteúdos e utilização correta das tecnologias
-      HTML e CSS de forma prática e funcional.
-    </p>
-  </div>
+<p>Este é o meu site correspondente a todas as tarefas de programação mandadas no ano lectivo corrente.</p>
 
+<div class="buttons">
+<a href="pag/trimestre1.html" class="primary">Iº Trimestre</a>
+<a href="pag/trimestre2.html" class="dark">IIº Trimestre</a>
+<a href="pag/trimestre3.html" class="dark">IIIº Trimestre</a>
+</div>
 
-  <div class="trimestres">
-    <h2>Trimestres</h2>
-    <a href="pag/trimestre1.html">I Trimestre</a>
-    <a href="pag/trimestre2.html">II Trimestre</a>
-    <a href="pag/trimestre3.html">III Trimestre</a>
-  </div>
-</main>
+<div class="social">Aprecie o meu desenvolvimento</div>
+
+</section>
 
 </body>
 </html>
