@@ -63,6 +63,67 @@ background:#ff2e63;
 color:white;
 }
 
+  .container{
+    max-width:900px;
+    margin:auto;
+    background: black;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+input,select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.trimestre{
+    margin-top:20px;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.row{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+
+button{
+    margin-top:20px;
+    padding:12px;
+    width:100%;
+    background:black;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#333;
+}
+
+.link{
+    display:block;
+    text-align:center;
+    margin-top:15px;
+}
   
 </style>
 </head>
@@ -85,6 +146,138 @@ color:white;
 </div>
 </nav>
 
- 
+  
+<div class="container">
+
+<h1>Cadastro de Notas</h1>
+
+<form id="formulario">
+
+<label>Nome do Aluno</label>
+<input type="text" id="nome" required>
+
+<label>Disciplina</label>
+<select id="disciplina" required>
+<option value="">Selecione</option>
+<option>Matemática</option>
+<option>TLP</option>
+<option>Sistema de Informação</option>
+<option>IAG</option>
+<option>Empreendedorismo</option>
+<option>Projecto Tecnológico</option>
+</select>
+
+<div class="trimestre">
+<h3>I Trimestre</h3>
+
+<div class="row">
+<div>
+<label>MAC</label>
+<input type="number" id="mac1">
+</div>
+
+<div>
+<label>PP</label>
+<input type="number" id="pp1">
+</div>
+
+<div>
+<label>PT</label>
+<input type="number" id="pt1">
+</div>
+</div>
+</div>
+
+<div class="trimestre">
+<h3>II Trimestre</h3>
+
+<div class="row">
+<div>
+<label>MAC</label>
+<input type="number" id="mac2">
+</div>
+
+<div>
+<label>PP</label>
+<input type="number" id="pp2">
+</div>
+
+<div>
+<label>PT</label>
+<input type="number" id="pt2">
+</div>
+</div>
+</div>
+
+<div class="trimestre">
+<h3>III Trimestre</h3>
+
+<div class="row">
+<div>
+<label>MAC</label>
+<input type="number" id="mac3">
+</div>
+
+<div>
+<label>PP</label>
+<input type="number" id="pp3">
+</div>
+
+<div>
+<label>PT</label>
+<input type="number" id="pt3">
+</div>
+</div>
+</div>
+
+<button type="submit">Guardar Dados</button>
+
+</form>
+
+<a class="link" href="ttt2.html">
+Ver Tabela
+</a>
+
+</div>
+
+
+<script>
+
+document.getElementById("formulario").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+let dados = JSON.parse(localStorage.getItem("notas")) || [];
+
+dados.push({
+
+nome: document.getElementById("nome").value,
+disciplina: document.getElementById("disciplina").value,
+
+mac1: document.getElementById("mac1").value,
+pp1: document.getElementById("pp1").value,
+pt1: document.getElementById("pt1").value,
+
+mac2: document.getElementById("mac2").value,
+pp2: document.getElementById("pp2").value,
+pt2: document.getElementById("pt2").value,
+
+mac3: document.getElementById("mac3").value,
+pp3: document.getElementById("pp3").value,
+pt3: document.getElementById("pt3").value
+
+});
+
+localStorage.setItem("notas", JSON.stringify(dados));
+
+alert("Dados guardados com sucesso!");
+
+this.reset();
+
+});
+
+</script>
+
+
 </body>
-</html>
+ </html>
