@@ -62,6 +62,49 @@ color:white;
 background:#ff2e63;
 color:white;
 }
+  
+  .container{
+    width:100%;
+    overflow:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background: blue;
+    color: white;
+}
+
+th,td{
+    border:1px solid #ccc;
+    padding:8px;
+    text-align:center;
+  color: black;
+  
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+button{
+    padding:10px;
+    background:red;
+    color:white;
+    border:none;
+    cursor:pointer;
+    margin-bottom:15px;
+}
+
+a{
+    display:inline-block;
+    margin-bottom:15px;
+}
 
   
 </style>
@@ -85,6 +128,137 @@ color:white;
 </div>
 </nav>
 
+
+
+<h1>Tabela de Notas</h1>
+
+<a href="ttt1.html">Voltar ao Formulário</a>
+
+<br><br>
+
+<button onclick="limparDados()">
+Limpar Todos os Dados
+</button>
+
+<div class="container">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Aluno</th>
+<th>Disciplina</th>
+
+<th>MAC T1</th>
+<th>PP T1</th>
+<th>PT T1</th>
+
+<th>MAC T2</th>
+<th>PP T2</th>
+<th>PT T2</th>
+
+<th>MAC T3</th>
+<th>PP T3</th>
+<th>PT T3</th>
+
+<th>Média Final</th>
+<th>Resultado</th>
+</tr>
+
+</thead>
+
+<tbody id="corpoTabela">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script>
+
+let dados = JSON.parse(localStorage.getItem("notas")) || [];
+
+let tabela = document.getElementById("corpoTabela");
+
+dados.forEach(item => {
+
+let notas = [
+Number(item.mac1 || 0),
+Number(item.pp1 || 0),
+Number(item.pt1 || 0),
+
+Number(item.mac2 || 0),
+Number(item.pp2 || 0),
+Number(item.pt2 || 0),
+
+Number(item.mac3 || 0),
+Number(item.pp3 || 0),
+Number(item.pt3 || 0)
+];
+
+let soma = notas.reduce((total, nota) => total + nota, 0);
+
+let media = (soma / notas.length).toFixed(1);
+
+let resultado = "";
+let cor = "";
+
+if(media < 7){
+resultado = "Reprovado";
+cor = "red";
+}
+else if(media >= 10){
+resultado = "Aprovado";
+cor = "green";
+}
+else{
+resultado = "Recurso";
+cor = "orange";
+}
+
+tabela.innerHTML += `
+<tr>
+
+<td>${item.nome}</td>
+<td>${item.disciplina}</td>
+
+<td>${item.mac1}</td>
+<td>${item.pp1}</td>
+<td>${item.pt1}</td>
+
+<td>${item.mac2}</td>
+<td>${item.pp2}</td>
+<td>${item.pt2}</td>
+
+<td>${item.mac3}</td>
+<td>${item.pp3}</td>
+<td>${item.pt3}</td>
+
+<td><strong>${media}</strong></td>
+
+<td style="font-weight:bold;color:${cor}">
+${resultado}
+</td>
+
+</tr>
+`;
+
+});
+
+function limparDados(){
+
+if(confirm("Deseja apagar todos os registos?")){
+
+localStorage.removeItem("notas");
+location.reload();
+
+}
+
+}
+
+</script>
  
 </body>
 </html>
